@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="vendors/css/alertify.min.css">
+    <link rel="stylesheet" href="vendors/css/themes/default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    </link>
+    <script src='vendors/state-machine.min.js'></script>
+    <script src='vendors/alertify.min.js'></script>
+    <script src="src/alert.js" charset="utf-8"></script>
+    <script src="src/data.js" charset="utf-8"></script>
+    <script src="src/game.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <form>
+                <label>Player Name:</label>
+                <input id="playerName" type="text" autofocus></input>
+                <button type="button" id="newPlayerBtn">Add</button>
+                <button type="button" id="removeAllPlayersBtn">Remove All</button>
+            </form>
+            <div class="players">
+            </div>
+            <div class="buttonGroup">
+                <button type="button" id="startGameBtn">START</button>
+                <button type="button" id="restartGameBtn" disabled>RESTART</button>
+            </div>
+        </div>
+        <div class="cards">
+        </div>
+    </div>
+</body>
+
+</html>

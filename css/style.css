@@ -1,0 +1,77 @@
+img {
+    width: 105px;
+    height: 150px;
+    cursor: pointer;
+}
+
+form {
+    display: inline-grid;    
+    grid-gap: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #2196F3;
+}
+
+form button {
+    height: 30px;
+}
+
+label {
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+}
+
+#startGameBtn {
+    /* margin: 10px; */
+    background: green;
+    color: white;
+}
+
+.menu { 
+    display: grid;
+    grid-column: auto;
+    justify-items: stretch;
+    grid-column-start: 1;
+    border: 1px solid #2196F3;
+}
+
+.cards { 
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-gap: 10px;
+    justify-items: stretch;
+    padding: 10px;
+    border: 1px solid #2196F3;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+.players {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.playing {
+    height: 16px;
+    width: 16px;
+    background-color: #0f0;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .buttonGroup {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-gap:10px;
+      padding: 10px;
+      height: 100px;
+  }
