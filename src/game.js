@@ -29,7 +29,7 @@ class GameMemory {
                 },
                 onGameOver: () => {
                     console.log('Game Over!')
-                    showAlert(`The Player ${this.currentPlayer.name} wins!!!`)
+                    showAlert(`O jogador ${this.currentPlayer.name} venceu!!!`)
                 }
             }
         })
@@ -71,7 +71,7 @@ class GameMemory {
         const cardImgCurrent = document.querySelector(`#card_${cardCurrent.name}_${cardCurrent.id}`)
 
         if (cardPrevious.name === cardCurrent.name) {
-            showNotification('You found a match.');
+            showNotification('Parabéns! Encontrou uma carta.');
             currentPlayer.score.value = currentPlayer.score.value + 1;
             document.querySelector('#' + currentPlayer.score.id).textContent = currentPlayer.score.value
             cardImgPrevious.setAttribute('src', this.cardBlack)
@@ -93,7 +93,7 @@ class GameMemory {
     flipCard(selectedImageCard, gameMemory) {
         const imgUrl = selectedImageCard.getAttribute('src')
         if (imgUrl !== gameMemory.cardBackSide) {
-            showNotification('Can\'t flip this card.', ALERT_TYPE.waning)
+            showNotification('Não pode virar esta carta.', ALERT_TYPE.waning)
             return
         }
 
@@ -146,9 +146,9 @@ class GameMemory {
         players.innerHTML = ''
 
         const nameLabel = document.createElement('label')
-        nameLabel.textContent = 'Name'
+        nameLabel.textContent = 'Nome'
         const scoreLabel = document.createElement('label')
-        scoreLabel.textContent = 'Score'
+        scoreLabel.textContent = 'Placar'
         scoreLabel.style = 'text-align: center'
         const emptyLabel = document.createElement('label')
         emptyLabel.textContent = ''
@@ -176,7 +176,7 @@ class GameMemory {
             const score = document.createElement('span')
             const isPlaying = document.createElement('span')
 
-            const playerNameValue = playerName.value || `Player ${++playerCount}`
+            const playerNameValue = playerName.value || `Jogador ${++playerCount}`
             const playerFormatted = playerNameValue.replace(' ', '').toLowerCase()
 
             isPlaying.id = `playing_${playerFormatted}`
@@ -210,7 +210,7 @@ class GameMemory {
 
         startGameBtn.addEventListener('click', (e) => {
             if (this.players.length < 1) {
-                showAlert('Need minimun 1 player to start!')
+                showAlert('Precisa de no mínimo 1 jogador para começar!')
                 return
             }
             this.fsm.running()

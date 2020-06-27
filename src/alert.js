@@ -1,5 +1,5 @@
 const showAlert = (msg) => {
-    alertify.alert('Game Memory', msg)
+    alertify.alert('Jogo da Memória de Bia', msg)
 }
 
 const showNotification = (msg, type) => {

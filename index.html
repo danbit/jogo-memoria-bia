@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Memory Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Memória da Bia</title>
     <link rel="stylesheet" href="vendors/css/alertify.min.css">
     <link rel="stylesheet" href="vendors/css/themes/default.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -16,19 +17,20 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container">    
         <div class="menu">
             <form>
-                <label>Player Name:</label>
+                <h4><i>*Jogo de Memória da Bia*</i></h4>
+                <label>Nome do Jogador:</label>
                 <input id="playerName" type="text" autofocus></input>
-                <button type="button" id="newPlayerBtn">Add</button>
-                <button type="button" id="removeAllPlayersBtn">Remove All</button>
+                <button type="button" id="newPlayerBtn">Adicionar Jogador</button>
+                <button type="button" id="removeAllPlayersBtn">Remover Todos</button>
             </form>
             <div class="players">
             </div>
             <div class="buttonGroup">
                 <button type="button" id="startGameBtn">START</button>
-                <button type="button" id="restartGameBtn" disabled>RESTART</button>
+                <button type="button" id="restartGameBtn" disabled>REINICIAR</button>
             </div>
         </div>
         <div class="cards">

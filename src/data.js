@@ -17,7 +17,7 @@ let cardsData = [
     },
     {
         name: 'bailarina',
-        img: 'https://imgsapp2.correiobraziliense.com.br/app/noticia_127983242361/2017/01/28/568893/20170127214406849536o.jpg'
+        img: 'https://www.artesanatopassoapassoja.com.br/wp-content/uploads/2018/07/bailarina-aquarela.jpg'
     },
     {
         name: 'cat-siamese',
@@ -83,6 +83,26 @@ let cardsData = [
         name: 'baby-shark',
         img: 'https://i.pinimg.com/originals/dd/b3/ac/ddb3ac1bcff2a6386e91f426efc1fe90.jpg'
     },        
+    {
+        name: 'hulk',
+        img: 'https://i.pinimg.com/236x/56/b5/c3/56b5c311d7092f536d103e90024e1611--hulk-party-superhero-party.jpg'
+    },
+    {
+        name: 'homem-aranha',
+        img: 'https://i.pinimg.com/originals/93/5b/26/935b264574a1d4b2b6cad2cc2ed599a5.jpg'
+    },
+    {
+        name: 'pikachu',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS0-01a3Hg5l_sLEr6qGGE2EivY6L7PKPprZg&usqp=CAU'
+    },
+    {
+        name: 'zumbi',
+        img: 'https://i.pinimg.com/originals/bd/7a/e0/bd7ae0a4c988885cc64b400c82759b44.png'
+    },
+    {
+        name: 'barbie',
+        img: 'https://www.casasbahia-imagens.com.br/brinquedos/BonecasdeBrinquedos/Barbie/14395463/1109119789/boneca-barbie-mattel-dreamtopia-desenhos-magicos-sereia-14395463.jpg'
+    }
 ]
 
 cardsData = [...cardsData, ...cardsData]
