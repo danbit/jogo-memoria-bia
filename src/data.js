@@ -105,6 +105,8 @@ let cardsData = [
     }
 ]
 
-cardsData = [...cardsData, ...cardsData]
-console.log(`Total of ${cardsData.length} cards`)
 cardsData.sort(() => 0.5 - Math.random())
+cardsData = cardsData.slice(0, 18)
+cardsData = [...cardsData, ...cardsData]
+cardsData.sort(() => 0.5 - Math.random())
+console.log(`Total of ${cardsData.length} cards`)
